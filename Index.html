@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearConsent — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f5f0;
+      --ink: #1c1b18;
+      --muted: #6e6b63;
+      --accent: #1a5c3a;
+      --accent-light: #e8f4ee;
+      --rule: #dedad3;
+      --card: #ffffff;
+      --warn: #fff8e6;
+      --warn-border: #e6a817;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--rule);
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+
+    .ext-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em { font-style: italic; color: var(--accent); }
+
+    .meta { color: var(--muted); font-size: 0.85rem; margin-top: 0.75rem; }
+
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 6rem;
+    }
+
+    .tldr {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .tldr-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.6rem;
+    }
+
+    .tldr p { font-size: 1.05rem; line-height: 1.65; color: #fff; opacity: 0.95; }
+
+    section { margin-bottom: 2.75rem; }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2 .num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+    }
+
+    p { color: #3d3b36; margin-bottom: 0.8rem; }
+    p:last-child { margin-bottom: 0; }
+    p strong { font-weight: 500; }
+    code { font-family: monospace; font-size: 0.9em; background: #eee; padding: 0.1em 0.35em; border-radius: 3px; }
+
+    ul.checks { list-style: none; padding: 0; margin-top: 0.5rem; }
+    ul.checks li {
+      padding: 0.45rem 0 0.45rem 1.6rem;
+      position: relative;
+      color: #3d3b36;
+      border-bottom: 1px solid var(--rule);
+    }
+    ul.checks li:last-child { border-bottom: none; }
+    ul.checks li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 500; }
+    ul.checks li.cross::before { content: '✕'; color: #c0392b; }
+
+    .box { border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1rem 0; font-size: 0.95rem; }
+    .box-warn { background: var(--warn); border-left: 3px solid var(--warn-border); }
+    .box a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 0.75rem; }
+    th {
+      text-align: left;
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.5rem 0.75rem;
+      border-bottom: 2px solid var(--rule);
+    }
+    td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--rule); vertical-align: top; color: #3d3b36; }
+    td:first-child { font-family: monospace; font-size: 0.85rem; color: var(--accent); white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="ext-badge">🔍 Chrome Extension</div>
+    <h1>Clear<em>Consent</em><br>Privacy Policy</h1>
+    <p class="meta">Version 1.0.0 &nbsp;·&nbsp; Last updated: March 2026</p>
+  </header>
+
+  <main>
+
+    <div class="tldr">
+      <div class="tldr-label">TL;DR</div>
+      <p>ClearConsent's developer collects <strong>zero data</strong> about you. Your API key lives only on your own device. When you analyse text, it goes directly from your browser to Anthropic's API using <em>your own key</em> — we never see it, store it, or touch it.</p>
+    </div>
+
+    <section>
+      <h2><span class="num">1</span> Who We Are</h2>
+      <p>ClearConsent is a Google Chrome extension that translates cookie banners, privacy policies, and terms of service into plain English. It works by forwarding the relevant text to the Anthropic Claude API on your behalf.</p>
+      <p>The extension has no backend server, no database, and no analytics platform. All processing happens either in your browser or via your own Anthropic account.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span> What Data the Extension Handles</h2>
+
+      <p><strong>Your Anthropic API Key</strong></p>
+      <p>To use ClearConsent you supply your own Anthropic API key. This is saved locally to your browser using Chrome's <code>storage.local</code> API. It never leaves your device except to authenticate requests sent directly to <code>api.anthropic.com</code>. We never receive, see, or store it.</p>
+
+      <p style="margin-top:1.25rem;"><strong>Page or Banner Text</strong></p>
+      <p>When you click Analyse, the text you have selected (a cookie banner, highlighted text, or pasted content) is sent to Anthropic's API to generate a plain-English summary. That text:</p>
+      <ul class="checks">
+        <li>Is transmitted directly from your browser to <code>api.anthropic.com</code></li>
+        <li class="cross">Is never sent to any server operated by ClearConsent</li>
+        <li class="cross">Is never logged, stored, or recorded by us</li>
+        <li class="cross">Is never used for advertising or profiling of any kind</li>
+      </ul>
+
+      <div class="box box-warn" style="margin-top:1rem;">
+        <strong>Third-party notice:</strong> Text you analyse is processed by Anthropic under their own policies. We recommend reviewing <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">Anthropic's Privacy Policy</a> to understand how API inputs are handled on their end.
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span> What We Do Not Collect</h2>
+      <ul class="checks">
+        <li class="cross">Personal identifiers (name, email address, IP address)</li>
+        <li class="cross">Browsing history or visited URLs</li>
+        <li class="cross">Analytics, telemetry, or crash reports</li>
+        <li class="cross">Cookies or tracking pixels</li>
+        <li class="cross">Usage statistics of any kind</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Permissions Explained</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why it is needed</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>activeTab</td>
+            <td>Allows the extension to read the text of the page currently open in your browser — only when you trigger an analysis. It cannot access other tabs or your browsing history.</td>
+          </tr>
+          <tr>
+            <td>storage</td>
+            <td>Saves your Anthropic API key locally on your device so you do not have to re-enter it each time you open the extension.</td>
+          </tr>
+          <tr>
+            <td>host: api.anthropic.com</td>
+            <td>Permits the extension to make API calls to Anthropic on your behalf. No other external hosts are contacted by the extension.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span> Data Retention &amp; Deletion</h2>
+      <p>Because we collect no data, there is nothing for us to retain or delete on our end.</p>
+      <p>Your API key stays in your browser's local storage until you remove it. To clear it, open the extension, click the settings icon, and delete your key — or go to <strong>Chrome Settings → Privacy and Security → Clear browsing data</strong> and clear site data.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span> Children's Privacy</h2>
+      <p>ClearConsent is not directed at children under 13 and we do not knowingly collect any information from children.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span> Changes to This Policy</h2>
+      <p>If we make material changes, we will update the "Last updated" date at the top of this page. Continued use of the extension after changes constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span> Contact</h2>
+      <div class="contact-card">
+        <p>Questions about this Privacy Policy? Please open an issue on the project repository or use the support tab on the Chrome Web Store listing.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 ClearConsent &nbsp;·&nbsp; Not affiliated with Anthropic, PBC.
+  </footer>
+
+</body>
+</html>
